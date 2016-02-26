@@ -9,7 +9,8 @@ Desktop.ini
 $RECYCLE.BIN/
 
 #Visual Studios files
-*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
 
 # Windows Installer files
 *.cab
