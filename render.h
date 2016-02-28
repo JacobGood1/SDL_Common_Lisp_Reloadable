@@ -21,3 +21,8 @@ extern "C" __declspec(dllexport) inline void __cdecl render_present(SDL_Renderer
 	SDL_RenderPresent(renderer);
 }
 
+extern "C" __declspec(dllexport) inline void __cdecl destroy_renderer(SDL_Renderer* renderer)
+{
+	SDL_DestroyRenderer(renderer);
+}
+
