@@ -23,3 +23,7 @@ extern "C" __declspec(dllexport) inline void __cdecl destroy_window(SDL_Window* 
 }
 
 
+extern "C" __declspec(dllexport) inline SDL_Surface* __cdecl get_window_surface(SDL_Window* window)
+{
+	return SDL_GetWindowSurface(window);
+}
