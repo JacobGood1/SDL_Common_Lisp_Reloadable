@@ -1,5 +1,6 @@
 #pragma once
 #include <SDL.h>
+#include <glew.h>
 
 extern "C" __declspec(dllexport) inline int __cdecl update_window_surface(SDL_Window* window)
 {
