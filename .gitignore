@@ -50,3 +50,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 x64
+*.filters
+*.vcxproj

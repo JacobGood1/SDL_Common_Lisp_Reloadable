@@ -1,5 +1,6 @@
 #pragma once
 #include <SDL.h>
+#include <glew.h>
 
 extern "C" __declspec(dllexport) inline int __cdecl update_window_surface(SDL_Window* window)
 {
@@ -26,4 +27,26 @@ extern "C" __declspec(dllexport) inline void __cdecl destroy_window(SDL_Window* 
 extern "C" __declspec(dllexport) inline SDL_Surface* __cdecl get_window_surface(SDL_Window* window)
 {
 	return SDL_GetWindowSurface(window);
+}
+
+
+
+// media.h
+
+extern "C" __declspec(dllexport) inline SDL_Surface* __cdecl load_bmp(char* bmp_path)
+{
+	SDL_Surface* surface = SDL_LoadBMP(bmp_path);
+	return surface;
+}
+
+//misc.h
+
+extern "C" __declspec(dllexport) inline const char *SDLCALL __cdecl get_error() 
+{
+	return SDL_GetError();
+}
+
+extern "C" __declspec(dllexport) inline void __cdecl delay(int amount)
+{
+	SDL_Delay(amount);
 }
