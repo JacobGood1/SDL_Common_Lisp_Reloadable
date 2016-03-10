@@ -156,6 +156,7 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="surface.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="time.h" />
     <ClInclude Include="window.h" />
   </ItemGroup>
   <ItemGroup>
