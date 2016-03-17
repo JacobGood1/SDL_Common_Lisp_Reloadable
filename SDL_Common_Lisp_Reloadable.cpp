@@ -8,3 +8,4 @@
 #include "window.h"
 #include "surface.h"
 #include "time.h"
+#include "media.h"
