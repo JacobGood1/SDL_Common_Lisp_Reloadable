@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="events.h" />
     <ClInclude Include="media.h" />
+    <ClInclude Include="misc.h" />
     <ClInclude Include="render.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="surface.h" />
