@@ -15,3 +15,8 @@ extern "C" __declspec(dllexport) inline void __cdecl free_surface(SDL_Surface* s
 {
 	SDL_FreeSurface(surface);
 }
+
+extern "C" __declspec(dllexport) inline SDL_PixelFormat* __cdecl get_format(SDL_Surface* surface)
+{
+	return surface -> format;
+}
