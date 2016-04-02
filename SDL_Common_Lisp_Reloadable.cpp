@@ -10,3 +10,4 @@
 #include "time.h"
 #include "media.h"
 #include "misc.h"
+#include "structs.h"
