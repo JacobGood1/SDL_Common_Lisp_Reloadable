@@ -29,4 +29,3 @@ extern "C" __declspec(dllexport) inline SDL_Surface* __cdecl get_window_surface(
 {
 	return SDL_GetWindowSurface(window);
 }
-

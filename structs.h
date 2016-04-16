@@ -9,6 +9,8 @@
 	int w;
 };*/
 
+
+//RECT
 extern "C" __declspec(dllexport) SDL_Rect* __cdecl new_rect(int x, int y, int w, int h)
 {
 	SDL_Rect* rect = new SDL_Rect();
@@ -62,6 +64,23 @@ extern "C" __declspec(dllexport) SDL_Rect* __cdecl rect_set_w(SDL_Rect* rect, in
 }
 extern "C" __declspec(dllexport) SDL_Rect* __cdecl rect_set_h(SDL_Rect* rect, int value)
 {
+	//SDL_Point
 	rect->h = value;
 	return rect;
+}
+
+//POINT
+extern "C" __declspec(dllexport) SDL_Point* __cdecl new_point(int x, int y)
+{
+	SDL_Point* point = new SDL_Point();
+	point->x = x;
+	point->y = y;
+
+	return point;
+}
+
+extern "C" __declspec(dllexport) void __cdecl delete_point(SDL_Point* point)
+{
+	delete point;
+	point = NULL;
 }
