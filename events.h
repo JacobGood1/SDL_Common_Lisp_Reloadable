@@ -10,6 +10,8 @@ extern "C" __declspec(dllexport) inline int __cdecl poll_event()
 
 extern "C" __declspec(dllexport) inline int __cdecl get_event_type()
 {
+	//SDL_SCANCODE_Q
+	//SDL_QUIT
 	return e.type;
 }
 
